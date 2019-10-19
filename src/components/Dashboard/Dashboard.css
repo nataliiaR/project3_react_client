@@ -1,0 +1,52 @@
+
+.carousel{
+
+  width: 90%;
+  margin: auto;
+  height: 50%;
+  margin-top:2em;
+  position: relative;
+}
+
+.image_cust{
+  width: 100%;
+}
+
+.carousel-control-next{
+  background-color: brown;
+  width:3%
+}
+.carousel-control-prev{
+  background-color: brown;
+  width:3%
+}
+.carousel-indicators {
+  visibility: hidden;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  text-align: center;
+  margin-bottom: 1em;
+
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.dayTittle{
+  text-align: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 3em
+}
