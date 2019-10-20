@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import NotFound from "./pages/NotFound/NotFound.js";
 import Navbar from "./components/Navbar/Navbar.js";
 
+import MyAccount from "./pages/MyAccount/MyAccount";
+
 
 export function makeMainRoutes() {
   return (
@@ -15,6 +17,7 @@ export function makeMainRoutes() {
         <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/myaccount" component={MyAccount} />
           <Route component={NotFound} />
         </Switch>
       </div>

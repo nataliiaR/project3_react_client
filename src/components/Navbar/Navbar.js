@@ -56,6 +56,9 @@ class Navbar
                         <li className={ window.location.pathname === "/dashboard" ? "active" : "" }>
                             <Link className="nav-link" to="/dashboard">Dashboard</Link>
                         </li>
+                        <li className={ window.location.pathname === "/myaccount" ? "active" : "" }>
+                            <Link className="nav-link" to="/myaccount">My Account</Link>
+                        </li>
                         <li>
                         
                             <button className= "btn" onClick={this.handleOpenModal}> Sign In</button>

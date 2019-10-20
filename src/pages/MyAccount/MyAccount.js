@@ -1,33 +1,31 @@
 import React, { Component } from 'react';
-import './Home.css';
-import logo from './imageIndexLarge.jpg';
+import PropTypes from 'prop-types';
 import '../../utils/dietConfig';
-import DietModal from '../../components/MyDetails/MyDetails';
-
+import MyDetails from '../../components/MyDetails/MyDetails';
+import MyAccountMenu from '../../components/MyAccountMenu/MyAccountMenu';
 
 class MyAccount extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          response: '', // I am not sure about the purpose of this, leaving it as it is
-          currentMode: 'form1',
+            currentMode: '',
         };
       }
     
       // returns the corresponding Form based on currentMode
       getForm(currentMode) {
         const forms =  {
-          form1: <Form1/>,
-          form2: <Form2/>,
-          form3: <Form3/>,
-          form4: <Form4/>
+          myDetails: <MyDetails/>,
+          form2: <MyDetails/>,
+          form3: <MyDetails/>,
+          form4: <MyDetails/>
         };
     
         return forms[currentMode];
       }
     
       // update currentMode when ConfigurationMenu triggers the callback
-      toggleForm(currentMode) {
+      toggleForm = (currentMode) => {
         this.setState({ currentMode });
       }
 
@@ -36,25 +34,13 @@ class MyAccount extends Component {
 
     <div className= "container-flex"> 
         <div className="row">
-            <div className="col-md-4">
-                <button id="myDetails"> My Details </button>
-                <button id = "myFavorites"> My Favorites </button>
-            </div>
-
-            <div className="col-md-8">
-              
-                <div>
-                <div>
-        <ConfigurationMenu toggleForm={this.toggleForm} />
+            <div className="col-md-12">
+            <MyAccountMenu toggleForm={this.toggleForm} />
         <div>
           {this.getForm(this.state.currentMode)}
         </div>
-      </div>
-                
-                </div> 
-              
-               
             </div>
+
 
         </div>
     </div>
