@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-import RecipeItem from "./RecipeItem/RecipeItem.js"
+import RecipeItem from "../../components/RecipeItem/RecipeItem.js"
 import ReactModal from 'react-modal';
-import Navbar from "../Navbar/Navbar";
 import Carousel from 'react-bootstrap/Carousel'
 
 import "./Dashboard.css";
@@ -85,7 +84,6 @@ class Dashboard extends Component {
 
         return (
         <div>
-            <Navbar />
                 <Carousel className = "carousel" interval={0} wrap ={false}>
                 <Carousel.Item>
                  
@@ -152,7 +150,7 @@ class Dashboard extends Component {
    
                 </Carousel>
                 
-                );
+            
 
     </div>
         );

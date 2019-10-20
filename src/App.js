@@ -1,18 +1,23 @@
 import React from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
-import Dashboard from "./components/Dashboard";
-import Home from './components/Home';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import Dashboard from "./pages/Dashboard";
+import Home from './pages/Home';
+import NotFound from "./pages/NotFound/NotFound.js";
+import Navbar from "./components/Navbar/Navbar.js";
 
 
-
-export const makeMainRoutes = () => {
+export function makeMainRoutes() {
   return (
-      <Router>
-        <div>
-          <Route exact path="/" component={Home} />
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+        <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/dashboard" component={Dashboard} />
-        </div>
-      </Router>
+          <Route component={NotFound} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
