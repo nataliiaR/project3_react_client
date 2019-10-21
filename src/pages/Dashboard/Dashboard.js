@@ -101,6 +101,9 @@ class Dashboard extends Component {
                                         style={customStyles}>
                                         <RecipeItem /> 	
                                         <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn float-right" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                             <div className = "col-md-4">
                                 <p>Lunch recipe: Pizza pizza</p>

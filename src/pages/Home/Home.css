@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
 
 .logo{
   width: 90%;
@@ -22,4 +27,12 @@
 
 .closeBtn{
   margin-left: 10em
+}
+
+.modalOnHome{
+  margin-top: 2em
+}
+
+.introOnHome{
+  margin-left: 2em;
 }

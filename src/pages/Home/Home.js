@@ -3,6 +3,8 @@ import './Home.css';
 import logo from './imageIndexLarge.jpg';
 import '../../utils/dietConfig';
 import DietModal from '../../components/DietModal/DietModal';
+import "../../components/DietModal/DietModal.css";
+
 
 
 class App extends Component {
@@ -19,11 +21,15 @@ class App extends Component {
 
             <div className="col-md-5">
               
-                <div>
-                    <h2>Welcome to iEat! </h2>
+                <div className="modalOnHome">
+
+                <div className = "introOnHome">
+                    <h2>Welcome to NutritionVA! </h2>
 
                     <p>To generate a meal plan please select and submit diet preferenences</p>
-                    <DietModal />
+                   
+                </div>
+                 <DietModal />
                 
                 </div> 
               
