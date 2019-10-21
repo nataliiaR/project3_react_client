@@ -4,8 +4,8 @@ import Dashboard from "./pages/Dashboard";
 import Home from './pages/Home';
 import NotFound from "./pages/NotFound/NotFound.js";
 import Navbar from "./components/Navbar/Navbar.js";
-
 import MyAccount from "./pages/MyAccount/MyAccount";
+import Footer from './components/Footer/Footer.js';
 
 
 export function makeMainRoutes() {
@@ -20,6 +20,7 @@ export function makeMainRoutes() {
           <Route exact path="/myaccount" component={MyAccount} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

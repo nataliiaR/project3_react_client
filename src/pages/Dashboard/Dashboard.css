@@ -6,24 +6,44 @@
   height: 50%;
   margin-top:2em;
   position: relative;
+  box-shadow: 10px 10px 59px 0px rgba(0,0,0,1);
 }
 
 .image_cust{
   width: 100%;
+  margin-bottom: 0.5em
 }
 
-.carousel-control-next{
-  background-color: brown;
-  width:3%
+.carousel-control-next
+{
+  width: 3%;
 }
 .carousel-control-prev{
-  background-color: brown;
-  width:3%
+  width: 3%;
+}
+.carousel-control-next-icon{
+  background-color: #343A40;
+}
+.carousel-control-prev-icon{
+  background-color: #343A40;
 }
 .carousel-indicators {
   visibility: hidden;
-}
+} 
+.refreshBtn{
+  border: 0.1em;
+  border-color: #343A40;
+  background-color: #44A7BB;
+  color: white;
 
+}
+.reloadDiv p{
+  display: inline;
+}
+.reloadDiv{
+  margin: 1em;
+  text-align: center;
+}
 /* Grow */
 .hvr-grow {
   display: inline-block;
@@ -47,6 +67,12 @@
 
 .dayTittle{
   text-align: center;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  font-size: 3em
+}
+
+
+.recipeCardBtn{
+ margin: 1em 1em 1em 1em;
+ color: white;
+ 
 }

@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
 
-    <div className= "container-flex"> 
+    <div className= "container-flex homePage"> 
         <div className="row">
             <div className="col-md-7">
                 <img className= "logo" src ={logo}/>
@@ -37,6 +37,7 @@ class App extends Component {
             </div>
 
         </div>
+        
     </div>
 
 

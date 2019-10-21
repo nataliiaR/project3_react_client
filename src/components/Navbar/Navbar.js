@@ -44,7 +44,7 @@ class Navbar
   render() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -59,7 +59,7 @@ class Navbar
                         <li className={ window.location.pathname === "/myaccount" ? "active" : "" }>
                             <Link className="nav-link" to="/myaccount">My Account</Link>
                         </li>
-                        <li>
+                        <li className="searchBtn ">
                         
                             <Link className="nav-link" to="/" onClick={this.handleOpenModal}> Sign In</Link>
   
@@ -72,10 +72,12 @@ class Navbar
                         </li>
                         
                     </ul>
+                    
                     <br />
                 </div>
             </nav>
         </div>
+        
     )
 }
 }
