@@ -14,10 +14,11 @@ const DietModal = () =>(
             <div className="modal-body">
                 
                 <form>
-                    <label htmlFor="customRange3">Total Days</label> 
-                
+                    <label htmlFor="customRange3"> Total Days</label> 
+                  
                     <div className="input-group">
-                            <input className="form-control" aria-describedby="basic-addon1" aria-label="" type="text" id="inputDays"/>
+                  
+                    <input className="form-control" aria-describedby="basic-addon1" aria-label="" type="text" id="inputDays"/>
                     </div>
                     <label htmlFor="customRange3">Calories</label> 
                     <div className="input-group">

@@ -94,7 +94,7 @@ class Dashboard extends Component {
                  
                         <p className="dayTittle"> Day 1 </p>
                         <br />
-                        <div className="row">
+                        <div className="row rowDashboard">
                             <div className = "hvr-grow col-md-4 recipeCard">
                                 <p>Breakfast recipe: Eggs, dumplings and more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg" />
@@ -110,15 +110,35 @@ class Dashboard extends Component {
                  
 	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
-                            <div className = "col-md-4">
+                            <div className = "hvr-grow col-md-4 recipeCard">
                                 <p>Lunch recipe: Pizza pizza</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/piza-3010062_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 2")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
-                            <div className = "col-md-4">
+                            <div className = "hvr-grow recipeCard col-md-4">
                                 <p>Dinner recipe: meat, asparagus abn more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 3")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                         </div>
                   
@@ -127,7 +147,7 @@ class Dashboard extends Component {
                 <Carousel.Item>
                 <p className="dayTittle"> Day 2 </p>
                         <br />
-                        <div className="row">
+                        <div className="row rowDashboard">
                             <div className = "hvr-grow col-md-4 recipeCard">
                                 <p>Breakfast recipe: Eggs, dumplings and more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg" />
@@ -146,19 +166,39 @@ class Dashboard extends Component {
                             <div className = "col-md-4">
                                 <p>Lunch recipe: Pizza pizza</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/piza-3010062_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 2")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                             <div className = "col-md-4">
                                 <p>Dinner recipe: meat, asparagus abn more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 3")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                         </div>
                 </Carousel.Item>
                 <Carousel.Item>
                 <p className="dayTittle"> Day 3</p>
                         <br />
-                        <div className="row">
+                        <div className="row rowDashboard">
                             <div className = "hvr-grow col-md-4 recipeCard">
                                 <p>Breakfast recipe: Eggs, dumplings and more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg" />
@@ -177,12 +217,32 @@ class Dashboard extends Component {
                             <div className = "col-md-4">
                                 <p>Lunch recipe: Pizza pizza</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/piza-3010062_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 2")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                             <div className = "col-md-4">
                                 <p>Dinner recipe: meat, asparagus abn more</p>
                                 <img className = "image_cust" src="https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305_960_720.jpg" />
-                                <button className= "btn" onClick={() => alert("Recipe 3")}> View Recipe</button>
+                                <button className= "btn recipeCardBtn" onClick={this.handleOpenModal}> View Recipe</button>
+  
+                                    {this.state.showModal ? <ReactModal 
+                                        isOpen={this.state.showModal}
+                                        contentLabel="Minimal Modal Example"
+                                        style={customStyles}>
+                                        <RecipeItem /> 	
+                                        <button onClick={this.handleCloseModal}>Close Modal</button></ReactModal>: null}
+
+                 
+	                            <button className="btn recipeCardBtn" /*onClick={() => props.delete(props._id)}*/>Delete Recipe</button>
                             </div>
                         </div>
                 </Carousel.Item>

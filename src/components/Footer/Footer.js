@@ -7,7 +7,8 @@ class Footer extends Component {
   render() {
     return (
         <div className="footer">
- <p>COPYRIGHT 2019 </p>
+          <p className ="leftAlign">Privacy | Terms   <span className ="rightAlign">COPYRIGHT 2019 </span></p>
+         
         </div>
         
     )
